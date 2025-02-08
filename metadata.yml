@@ -1,0 +1,12 @@
+title: "My Datasette"
+description: >-
+    This is my datasette project.
+license: APL 2.0
+source_url: https://kyleengler.com
+databases:
+  my_data:
+    tables:
+      landmarks:
+        label_column: Name
+      vehicle_accidents:
+        label_column: Accident_ID

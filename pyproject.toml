@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+include-package-data = true
+packages = ["my_datasette"]
+
+[tool.setuptools.package-data]
+"my_datasette.data_store" = ["*.csv"]
+
+[project]
+name = "my-datasette-project"
+authors = [
+    { name = "Kyle Engler" }
+]
+version = "2025.08.02.1"
+readme = { file = "README.md", content-type = "text/markdown" }
+requires-python = ">=3.7"
+dependencies = [
+    "datasette",
+    "datasette-render-html",
+    "sqlite_utils",
+]
+classifiers = [
+    "Framework :: Datasette",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: End Users/Desktop",
+    "Topic :: Database",
+    "License :: OSI Approved :: Apache Software License",
+]
+license = { text = "Apache License, Version 2.0"}
+
+[project.scripts]
+load-data = "my_datasette.load:load"
+
+[project.optional-dependencies]
+dev = [
+    "pytest"
+]
+test = [
+    "pytest"
+]

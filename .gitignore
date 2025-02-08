@@ -1,0 +1,4 @@
+/.DS_Store
+/.venv
+/my_datasette_project.egg-info
+/start-server.sh
