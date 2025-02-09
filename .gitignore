@@ -2,7 +2,7 @@
 # Created by .ignore support plugin (hsz.mobi)
 ### Exclude the SQLite DB
 # We want to generate the data at runtime, so ingore a generated db.
-lis.db
+data.db
 
 ### Python template
 # Byte-compiled / optimized / DLL files

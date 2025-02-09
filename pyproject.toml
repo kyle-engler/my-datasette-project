@@ -21,6 +21,7 @@ dependencies = [
     "datasette",
     "datasette-render-html",
     "sqlite_utils",
+    "datasette-cluster-map",
 ]
 classifiers = [
     "Framework :: Datasette",
